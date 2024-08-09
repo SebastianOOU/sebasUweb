@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="calculoCuadradoE.css">
+        <link rel="stylesheet" href="EnacabezadoSmartCalculator.css">
+        <link rel="stylesheet" href="footerTodoSmartCalculator.css">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="caja">
+                
+                <div class="logo">
+                    <img id="imgLogo" src="smartcalculatorLogo.png">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a  class="inicio" id="inicioCasa" href="smartCalculatorInicio.html">Inicio</a></li>
+            
+                        <li><a class="inicio" href="calculadora.html">Calculadora</a></li>
+                        <li>
+                            <div class="dropdown">
+
+                                <button class="calculosFiguras">Calculos - Figuras</button>
+
+                                <div class="dropdownContent">
+
+                                    <a class="figuraCuadrado" href="calculoCuadrado.html">Cuadrado</a>
+                                    <a class="figuraRectangulo" href="calculoRectangulo.html">Rectangulo</a>
+                                    <a class="figuraTriangulo" href="calculoTriangulo.html">Triangulo</a>
+                                    <a class="figuraTrapecio" href="calculoTrapecio.html">Trapecio</a>
+                                    <a class="figuraRombo" href="caluloRombo.html">Rombo</a>
+                                    <a class="figuraCirculo" href="calculoCirculo.html">Circulo</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="inicio" href="">Conversiones</a></li>
+                    </ul>
+                </nav>        
+            </div>       
+        </header>
+        
+        <div id="tittleCuadrado">
+                    
+            <p id="DFNCIONC">Cuadrado</p>
+
+        </div>
+
+        <section class="definicionDelCuadrado">
+            <div class="definicionCuadrado">
+                         
+                <img class="cuadrado" src="imagenFiguraCuadrado.png">
+
+                <p id="definicion"><strong id="definicionid">Definición:</strong> Figura geometrica plana que se compone a partir de 4 lados totalmente iguales, cuyos angulos internos son de 90 grados (90°). Cada uno de sus lados son paralelos entre si.</p>
+            </div>
+
+        </section>
+
+        <div class="informacionCalculos">
+            <p class="informacion">En este apartado podras calcular el area y el perimetro del <strong id="negritaCuadrado">Cuadrado</strong>. Asi como tambien poder leer una breve Explicación sobre como hacer el calculo.</p>
+        </div>
+
+
+        <section class="calculosCuadrado">
+
+            <p class="pregunta">¿Qué calculo deceas realizar?</p>
+            <button class="botonArea">Area</button>
+            <button class="botonPerimetro">Perimetro</button>
+            <p class="texto"></p>
+            <label for="valor"></label>
+            <input  type="text" id="valor" class="numero" placeholder="Ingrese un valor">
+            <button class="calcular">Calcular</button>
+            <p class="resultado">=</p>
+            <div id="h33"><h3>Explicación :</h3></div>
+            
+
+            <div class="explicacion">
+
+                <p class="linea1">Ingrese algún valor para calcular.</p>
+                <p class="formula1"></p>
+                <p class="linea2"></p>
+                <p class="formula2"></p>
+                <p class="formula2p"></p>
+                <p id="linea3"></p>
+                <p id="resultadoFinal"></p>
+                <p id="linea4"></p>
+
+            </div>
+            
+            <p id="avisoSmartCalculator">Proporcionado por Smart Calculator.</p>
+
+
+
+        </section>
+
+
+        <footer>
+
+            <div class="contenidoFooter">
+
+                <ul>
+                    <li class="copyright"><p><strong id="hola">&copy</strong> Copyright Smart Calculator - 2022.</p><br><br><br></li>
+                    <li class="imgFooter"><img id="imgLogoFooter" src="smartcalculatorLogo.png"></li>
+                   
+                </ul>
+                <p id="smart"><strong class="footerDerechos">Smart Software </strong>- todos los derechos reservados.</p>
+
+            </div>
+            
+            
+
+        </footer>
+
+        
+
+        
+
+        <script>
+            window.addEventListener("scroll",function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+
+                var imagenlogo = document.querySelector("#imgLogo")
+                imagenlogo.classList.toggle("imaglogo",window.scrollY>0)
+
+                var botonesEnacbezado = document.querySelector("nav")
+                botonesEnacbezado.classList.toggle("nave",window.scrollY>0)
+            })
+        </script>
+        
+
+    </body>
+</html>

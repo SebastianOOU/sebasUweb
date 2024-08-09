@@ -1,0 +1,37 @@
+footer{
+    width: 90%;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.contenidoFooter{
+    padding: 30px 0 20px 0;
+    border-top: 2px solid #888888;
+}
+
+footer li{
+    display: inline-block;
+}
+
+.copyright p{
+    padding: 0 30px 0 0;
+    font-size: 15px;
+}
+
+#imgLogoFooter{
+    width: 250px;
+    border-left: 1px solid #888888;
+    padding: 0 0 0 30px;
+}
+
+.copyright #hola{
+    font-size: 18px;
+
+}
+.footerDerechos{   
+    font-weight: bold;  
+}
+
+#smart{
+    margin: 30px 0 0 0;
+}

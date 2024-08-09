@@ -1,0 +1,186 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 20px 10px 15px 10px;
+    box-shadow: 1px 1px 3px #888888;
+    position: sticky;   
+    top: 0;
+    background-color: white;
+    transition: 0.5s; 
+}
+ 
+header.abajo{
+    padding: 5px 0;
+    box-shadow: 0px 0px 10px #888888;
+    
+}
+
+#imgLogo.imaglogo{
+    width: 250px;
+    vertical-align: middle;
+}
+
+nav.nave{
+    vertical-align: middle;
+    transition: 1s;
+}
+
+.caja{
+    text-align: center;
+}
+
+.logo{
+    display: inline-block;
+    margin: 0 40px 0 0;
+}
+
+#imgLogo{
+    width: 350px;
+    transition: 0.5s;
+}
+
+
+.caja li{
+    margin: 0 30px 0 0;
+    display: inline;
+    transition: 0.5s;
+}
+
+nav{
+    display: inline-block;
+    transition: 1s;
+}
+
+.caja a{
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+
+.inicio{
+    text-decoration: none;
+    color: black;
+}
+
+
+nav .inicio{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px #888888;
+}
+
+nav .inicio:hover{
+    
+    background-color: #566573;
+    color: white;
+
+}
+
+
+
+.calculosFiguras{
+    font-size: 23px;
+    border: none;
+    background-color: white;
+    padding: 8px 10px 10px 10px;
+    box-shadow: 0px 0px 3px #888888;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.calculosFiguras::after{
+    content: "⮟";
+    padding: 0 0 0 5px;
+}
+
+.calculosFiguras:hover{
+    color: white;
+    cursor: pointer;
+    background-color: #566573;
+
+}
+
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownContent{
+    text-align: left;
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 0px 5px #888888;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+  
+}
+
+.dropdown:hover .dropdownContent{
+    display: block;
+
+}
+
+.dropdownContent a{
+    padding: 8px 0 8px 20px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.dropdownContent a:hover{
+
+    color: white;
+    background-color: #808B96;
+}
+
+
+.figuraCuadrado::before{
+    content: "□";
+    font-size: 45px;
+    padding: 0 8px 0 0;
+}
+
+.figuraRectangulo::before{
+    content: "▭";
+    font-size: 30px;
+    padding: 0 8px 0 0;
+
+}
+
+.figuraTriangulo::before{
+
+    content: "△";
+    font-size: 35px;
+    padding: 0 8px 0 0;
+
+}
+
+.figuraTrapecio::before{
+    content: "⏢";
+    font-size: 35px;
+    padding: 0 8px 0 0;
+
+}
+
+.figuraRombo::before{
+    content: "◇";
+    font-size: 40px;
+    padding: 0 8px 0 0;
+    
+
+}
+
+.figuraCirculo::before{
+    content: "◯";
+    font-size: 25px;
+    padding: 0 8px 0 0;
+    font-weight: bolder;
+}
