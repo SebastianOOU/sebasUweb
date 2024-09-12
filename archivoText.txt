@@ -1,3 +1,7 @@
 Hola Sebastian!! Cambiaras el mundo.
+<<<<<<< HEAD
 Sebastian
 HOOOLLAAAAA
+=======
+Tu puedes, Tu puedes
+>>>>>>> b415aa6f623b5359719aab61e3207c1067d807d3
